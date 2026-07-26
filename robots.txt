@@ -1,0 +1,19 @@
+# =============================================================================
+# robots.txt — Express Store By Kaushaindra
+# TECHNICAL SEO: this file is the first thing well-behaved crawlers (Googlebot,
+# Bingbot, etc.) request. It tells them which parts of the site they may crawl
+# and points them to the sitemap so they can discover every page efficiently.
+# =============================================================================
+
+User-agent: *
+Allow: /
+
+# Nothing on this demo store needs blocking (no admin area, no cart/checkout
+# backend, no duplicate search-result URLs) — but here's the pattern you'd use
+# if it did:
+# Disallow: /cart/
+# Disallow: /checkout/
+# Disallow: /*?sort=
+
+# Point crawlers straight to the sitemap so every page gets discovered fast
+Sitemap: https://kaushaindra.github.io/express-store/sitemap.xml
