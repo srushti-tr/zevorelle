@@ -1,131 +1,132 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<!-- ===================== TECHNICAL SEO: <head> ===================== -->
   <meta charset="UTF-8" />
-  <!-- Responsive viewport - required for mobile-first, Core Web Vitals & Google's mobile-first indexing -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- PAGE TITLE: unique per page, ~50-60 characters, primary keyword near the front -->
-  <title>SEO Blog | Express Store By Kaushaindra</title>
+  <title>Jewellery Care & Styling Blog | Zevorelle India</title>
+  <meta name="description" content="Explore Zevorelle's jewellery journal for anti-tarnish jewellery care, everyday styling ideas and thoughtful gifting guides for women in India." />
+  <link rel="canonical" href="https://zevorelle.netlify.app/blog.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Zevorelle" />
+  <meta name="theme-color" content="#741B32" />
 
-  <!-- META DESCRIPTION: unique per page, ~150-160 characters, written to earn the click from search results -->
-  <meta name="description" content="Explore beginner-friendly SEO blogs by Express Store by Kaushaindra. Learn on-page, technical and off-page SEO with practical guides, tips and tutorials." />
-
-  <!-- CANONICAL TAG: tells search engines the single authoritative URL for this page, preventing duplicate-content issues -->
-  <link rel="canonical" href="https://kaushaindra.github.io/express-store/blog.html" />
-
-  <!-- ROBOTS META: controls crawling/indexing per page. Most pages = index, follow. -->
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Kaushaindra Kumar" />
-
-  <!-- OPEN GRAPH (Facebook/LinkedIn/WhatsApp link previews) -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Express Store By Kaushaindra" />
-  <meta property="og:title" content="SEO Blog | Express Store By Kaushaindra" />
-  <meta property="og:description" content="Explore beginner-friendly SEO blogs by Express Store by Kaushaindra. Learn on-page, technical and off-page SEO with practical guides and tutorials." />
-  <meta property="og:url" content="https://kaushaindra.github.io/express-store/blog.html" />
-  <meta property="og:image" content="https://placehold.co/1200x630/0E5C56/E3A72E?text=Express+Store+By+Kaushaindra&font=montserrat" />
+  <meta property="og:site_name" content="Zevorelle" />
+  <meta property="og:title" content="Jewellery Care & Styling Blog | Zevorelle India" />
+  <meta property="og:description" content="Practical guides for caring for anti-tarnish jewellery, styling everyday pieces and choosing meaningful gifts." />
+  <meta property="og:url" content="https://zevorelle.netlify.app/blog.html" />
+  <meta property="og:image" content="https://zevorelle.netlify.app/images/blog/anti-tarnish-jewellery-care.png" />
+  <meta property="og:image:alt" content="Gold-tone anti-tarnish jewellery from the Zevorelle Jewellery Journal" />
   <meta property="og:locale" content="en_IN" />
 
-  <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SEO Blog | Express Store By Kaushaindra" />
-  <meta name="twitter:description" content="Practical, beginner-friendly articles on on-page, technical and off-page SEO, written alongside the Express Store By Kaushaindra training project." />
-  <meta name="twitter:image" content="https://placehold.co/1200x630/0E5C56/E3A72E?text=Express+Store+By+Kaushaindra&font=montserrat" />
+  <meta name="twitter:title" content="Jewellery Care & Styling Blog | Zevorelle India" />
+  <meta name="twitter:description" content="Jewellery care, styling and gifting guides from Zevorelle." />
+  <meta name="twitter:image" content="https://zevorelle.netlify.app/images/blog/anti-tarnish-jewellery-care.png" />
 
-  <!-- FAVICON & PWA MANIFEST -->
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#0E5C56" />
-
-  <!-- PRECONNECT: speeds up the first connection to font/image hosts (Core Web Vitals: LCP) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://placehold.co" />
-
-  <!-- FONTS: Fraunces (display) + Manrope (body) + Space Grotesk (utility/mono) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-
-  <!-- STYLESHEET -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- ===================== SCHEMA.ORG STRUCTURED DATA (JSON-LD) ===================== -->
-  <!-- Organization schema: tells Google who runs this site -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Express Store By Kaushaindra",
-    "url": "https://kaushaindra.github.io/express-store/",
-    "logo": "https://kaushaindra.github.io/express-store/images/favicon.svg",
-    "founder": { "@type": "Person", "name": "Kaushaindra Kumar" },
-    "areaServed": "Rewari, Haryana, India",
-    "sameAs": [
-      "https://github.com/kaushaindra",
-      "https://www.linkedin.com/in/kaushaindra"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://zevorelle.netlify.app/#organization",
+        "name": "Zevorelle",
+        "url": "https://zevorelle.netlify.app/",
+        "logo": "https://zevorelle.netlify.app/images/favicon.svg"
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://zevorelle.netlify.app/blog.html#blog",
+        "url": "https://zevorelle.netlify.app/blog.html",
+        "name": "Zevorelle Jewellery Journal",
+        "description": "Jewellery care, styling and gifting guides from Zevorelle.",
+        "publisher": { "@id": "https://zevorelle.netlify.app/#organization" },
+        "inLanguage": "en-IN",
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "How to Care for Anti-Tarnish Jewellery: 7 Simple Tips",
+            "url": "https://zevorelle.netlify.app/blog.html#anti-tarnish-jewellery-care",
+            "image": "https://zevorelle.netlify.app/images/blog/anti-tarnish-jewellery-care.png",
+            "datePublished": "2026-07-29",
+            "author": { "@id": "https://zevorelle.netlify.app/#organization" },
+            "publisher": { "@id": "https://zevorelle.netlify.app/#organization" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Anti-Tarnish vs Gold-Plated Jewellery: What Is the Difference?",
+            "url": "https://zevorelle.netlify.app/blog.html#anti-tarnish-vs-gold-plated",
+            "image": "https://zevorelle.netlify.app/images/blog/anti-tarnish-vs-gold-plated.png",
+            "datePublished": "2026-07-29",
+            "author": { "@id": "https://zevorelle.netlify.app/#organization" },
+            "publisher": { "@id": "https://zevorelle.netlify.app/#organization" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "How to Style Everyday Jewellery: A Simple Guide",
+            "url": "https://zevorelle.netlify.app/blog.html#everyday-jewellery-styling",
+            "image": "https://zevorelle.netlify.app/images/blog/everyday-jewellery-styling.png",
+            "datePublished": "2026-07-29",
+            "author": { "@id": "https://zevorelle.netlify.app/#organization" },
+            "publisher": { "@id": "https://zevorelle.netlify.app/#organization" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Jewellery Gift Guide for Her: Thoughtful Picks for Every Occasion",
+            "url": "https://zevorelle.netlify.app/blog.html#jewellery-gift-guide",
+            "image": "https://zevorelle.netlify.app/images/blog/jewellery-gift-guide.png",
+            "datePublished": "2026-07-29",
+            "author": { "@id": "https://zevorelle.netlify.app/#organization" },
+            "publisher": { "@id": "https://zevorelle.netlify.app/#organization" }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zevorelle.netlify.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Jewellery Journal", "item": "https://zevorelle.netlify.app/blog.html" }
+        ]
+      }
     ]
   }
   </script>
-
-  <!-- LocalBusiness schema: this is a TRAINING/DEMO business, values are illustrative - see CUSTOMIZATION.md -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Express Store By Kaushaindra",
-    "image": "https://placehold.co/1200x630/0E5C56/E3A72E?text=Express+Store+By+Kaushaindra&font=montserrat",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Rewari",
-      "addressRegion": "Haryana",
-      "postalCode": "123401",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-90000-00000",
-    "priceRange": "Rs. 300 - Rs. 3000"
-  }
-  </script>
-
-  <!-- WebSite schema + Sitelinks Search Box target -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Express Store By Kaushaindra",
-    "url": "https://kaushaindra.github.io/express-store/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://kaushaindra.github.io/express-store/shop.html?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://kaushaindra.github.io/express-store/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://kaushaindra.github.io/express-store/blog.html"}]
-  }
-  </script>
-
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="ticker" role="marquee" aria-label="Store highlights"><div class="ticker__track"><span>Same-day dispatch from Rewari, Haryana</span><span>Free shipping across India on orders over Rs. 999</span><span>Demo project for Digital Marketing SEO training</span><span>Easy 7-day returns (demo policy)</span><span>12,000+ happy demo customers</span><span>Same-day dispatch from Rewari, Haryana</span><span>Free shipping across India on orders over Rs. 999</span><span>Demo project for Digital Marketing SEO training</span><span>Easy 7-day returns (demo policy)</span><span>12,000+ happy demo customers</span></div></div>
+
+  <div class="ticker" aria-label="Zevorelle highlights">
+    <div class="ticker__track">
+      <span>Anti-tarnish jewellery for everyday elegance</span>
+      <span>Water-resistant designs made to be worn often</span>
+      <span>Skin-friendly styles for every moment</span>
+      <span>Anti-tarnish jewellery for everyday elegance</span>
+      <span>Water-resistant designs made to be worn often</span>
+      <span>Skin-friendly styles for every moment</span>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="nav">
-      <a href="index.html" class="brand" aria-label="Express Store By Kaushaindra - home">
-        <span class="brand__mark" aria-hidden="true">ES</span>
-        <span>Express Store<span class="brand__tag">By Kaushaindra</span></span>
+      <a href="index.html" class="brand" aria-label="Zevorelle home">
+        <img class="brand__logo" src="images/brand/zevorelle-logo.jpeg" alt="" width="132" height="58" />
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="blog.html" aria-current="page">Blog</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
       </nav>
       <div class="nav__actions">
         <form class="nav__search" role="search" data-search-form action="shop.html" method="get">
-          <label for="nav-search" class="visually-hidden">Search products</label>
-          <input type="search" id="nav-search" name="q" placeholder="Search products..." data-product-search />
+          <label for="nav-search" class="visually-hidden">Search jewellery</label>
+          <input type="search" id="nav-search" name="q" placeholder="Search jewellery..." data-product-search />
           <button type="submit" aria-label="Search"><span aria-hidden="true">&#128269;</span></button>
         </form>
         <a class="icon-btn" href="shop.html" aria-label="View cart">
@@ -138,113 +139,183 @@
       </div>
     </div>
   </header>
+
   <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Zevorelle Jewellery Journal</h1>
+        <p>Helpful guides for caring for, styling and gifting jewellery you love to wear.</p>
+      </div>
+    </section>
 
-  <div class="page-hero">
-    <div class="container">
-      <h1>The Express Store Blog</h1>
-      <p>Short, practical write-ups on the SEO decisions behind this project.</p>
-    </div>
-  </div>
-  <nav class="breadcrumb container" aria-label="Breadcrumb"><a href="index.html">Home</a> &rsaquo; <span aria-current="page">Blog</span></nav>
+    <nav class="breadcrumb container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> <span aria-hidden="true">&rsaquo;</span> <span aria-current="page">Jewellery Journal</span>
+    </nav>
 
-  <section class="section" style="padding-top:0;">
-    <div class="container">
-      <div class="post-grid">
-        <article class="post-card">
-          <img src="https://placehold.co/640x400/0E5C56/E3A72E?text=On-Page+SEO&font=montserrat" alt="Illustration for the blog post: On-Page SEO Basics Every Beginner Should Know" width="640" height="400" loading="lazy" />
-          <div class="post-card__body">
-            <div class="post-card__meta">On-Page SEO &middot; 10 Jul 2026</div>
-            <h3><a href="#post-0" class="stretched">On-Page SEO Basics Every Beginner Should Know</a></h3>
-            <p style="color:var(--color-ink-soft);font-size:0.92rem;">Titles, meta descriptions, headings and internal links — the four fundamentals we applied across every page of this store.</p>
+    <section class="section" style="padding-top:0;" aria-labelledby="latest-guides-heading">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="section__kicker">Jewellery guides</span>
+            <h2 id="latest-guides-heading">Care, style and gift with confidence</h2>
           </div>
-        </article><article class="post-card">
-          <img src="https://placehold.co/640x400/C4881A/142523?text=Technical+SEO&font=montserrat" alt="Illustration for the blog post: How We Added Schema.org Markup to This Store" width="640" height="400" loading="lazy" />
-          <div class="post-card__body">
-            <div class="post-card__meta">Technical SEO &middot; 3 Jul 2026</div>
-            <h3><a href="#post-1" class="stretched">How We Added Schema.org Markup to This Store</a></h3>
-            <p style="color:var(--color-ink-soft);font-size:0.92rem;">A walkthrough of the Organization, Product, FAQ and Breadcrumb JSON-LD blocks used across Express Store's pages.</p>
-          </div>
-        </article><article class="post-card">
-          <img src="https://placehold.co/640x400/142523/E3A72E?text=Technical+SEO&font=montserrat" alt="Illustration for the blog post: robots.txt and sitemap.xml, Explained Simply" width="640" height="400" loading="lazy" />
-          <div class="post-card__body">
-            <div class="post-card__meta">Technical SEO &middot; 26 Jun 2026</div>
-            <h3><a href="#post-2" class="stretched">robots.txt and sitemap.xml, Explained Simply</a></h3>
-            <p style="color:var(--color-ink-soft);font-size:0.92rem;">What these two files actually do, why search engines read them first, and how they're set up in this project.</p>
-          </div>
-        </article><article class="post-card">
-          <img src="https://placehold.co/640x400/D64545/F2F4F1?text=Off-Page+SEO&font=montserrat" alt="Illustration for the blog post: Off-Page SEO for Students: Backlinks, Citations and Trust" width="640" height="400" loading="lazy" />
-          <div class="post-card__body">
-            <div class="post-card__meta">Off-Page SEO &middot; 19 Jun 2026</div>
-            <h3><a href="#post-3" class="stretched">Off-Page SEO for Students: Backlinks, Citations and Trust</a></h3>
-            <p style="color:var(--color-ink-soft);font-size:0.92rem;">This demo store has no real backlinks — here's how a real store would earn them, and the exercises in ASSIGNMENTS.md.</p>
-          </div>
-        </article><article class="post-card">
-          <img src="https://placehold.co/640x400/0A403C/F2F4F1?text=Technical+SEO&font=montserrat" alt="Illustration for the blog post: Core Web Vitals: Keeping a Static Site Fast" width="640" height="400" loading="lazy" />
-          <div class="post-card__body">
-            <div class="post-card__meta">Technical SEO &middot; 12 Jun 2026</div>
-            <h3><a href="#post-4" class="stretched">Core Web Vitals: Keeping a Static Site Fast</a></h3>
-            <p style="color:var(--color-ink-soft);font-size:0.92rem;">Why this project avoids frameworks, how image sizing prevents layout shift, and other lightweight performance choices.</p>
-          </div>
-        </article><article class="post-card">
-          <img src="https://placehold.co/640x400/0E5C56/F2F4F1?text=On-Page+SEO&font=montserrat" alt="Illustration for the blog post: Writing Product Descriptions That Rank and Convert" width="640" height="400" loading="lazy" />
-          <div class="post-card__body">
-            <div class="post-card__meta">On-Page SEO &middot; 5 Jun 2026</div>
-            <h3><a href="#post-5" class="stretched">Writing Product Descriptions That Rank and Convert</a></h3>
-            <p style="color:var(--color-ink-soft);font-size:0.92rem;">A look at how each of the 12 product pages balances keyword relevance with genuinely useful descriptions.</p>
-          </div>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+            <figure class="post-card__media">
+              <img class="blog-image--care" src="images/blog/anti-tarnish-jewellery-care.png" alt="Gold-tone anti-tarnish necklace, rings, bracelet and hoop earrings arranged on an ivory jewellery pouch" width="640" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <div class="post-card__body">
+              <div class="post-card__meta"><time datetime="2026-07-29">29 Jul 2026</time> &middot; Jewellery Care</div>
+              <h3><a href="#anti-tarnish-jewellery-care" class="stretched">How to Care for Anti-Tarnish Jewellery: 7 Simple Tips</a></h3>
+              <p style="color:var(--color-ink-soft);font-size:0.92rem;">Easy habits that help your favourite everyday pieces stay clean, comfortable and ready to wear.</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <figure class="post-card__media">
+              <img class="blog-image--guide" src="images/blog/anti-tarnish-vs-gold-plated.png" alt="Gold-tone necklace and stack of rings arranged on ivory linen" width="640" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <div class="post-card__body">
+              <div class="post-card__meta"><time datetime="2026-07-29">29 Jul 2026</time> &middot; Jewellery Guide</div>
+              <h3><a href="#anti-tarnish-vs-gold-plated" class="stretched">Anti-Tarnish vs Gold-Plated Jewellery: What Is the Difference?</a></h3>
+              <p style="color:var(--color-ink-soft);font-size:0.92rem;">Learn the terms, what to look for and how to choose a piece that suits your routine.</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <figure class="post-card__media">
+              <img class="blog-image--style" src="images/blog/everyday-jewellery-styling.png" alt="Layered gold-tone necklaces, hoop earrings, bangle and rings styled on ivory fabric" width="640" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <div class="post-card__body">
+              <div class="post-card__meta"><time datetime="2026-07-29">29 Jul 2026</time> &middot; Styling Tips</div>
+              <h3><a href="#everyday-jewellery-styling" class="stretched">How to Style Everyday Jewellery: A Simple Guide</a></h3>
+              <p style="color:var(--color-ink-soft);font-size:0.92rem;">Build easy combinations with necklaces, earrings, rings and bracelets for every plan.</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <figure class="post-card__media">
+              <img class="blog-image--gift" src="images/blog/jewellery-gift-guide.png" alt="Gold-tone necklace and hoop earrings presented in an unbranded ivory jewellery gift box" width="640" height="400" loading="lazy" decoding="async" />
+            </figure>
+            <div class="post-card__body">
+              <div class="post-card__meta"><time datetime="2026-07-29">29 Jul 2026</time> &middot; Gift Guide</div>
+              <h3><a href="#jewellery-gift-guide" class="stretched">Jewellery Gift Guide for Her: Thoughtful Picks for Every Occasion</a></h3>
+              <p style="color:var(--color-ink-soft);font-size:0.92rem;">A simple way to choose a meaningful jewellery gift for celebrations and everyday milestones.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-label="Jewellery articles">
+      <div class="container prose">
+        <article id="anti-tarnish-jewellery-care" style="padding:10px 0 36px;">
+          <div class="post-card__meta">Jewellery Care &middot; <time datetime="2026-07-29">29 July 2026</time></div>
+          <h2>How to Care for Anti-Tarnish Jewellery: 7 Simple Tips</h2>
+          <p>Anti-tarnish jewellery is a lovely choice when you want easy, everyday shine. Like any accessory you wear often, it still benefits from a little care. A few simple habits can help keep your rings, earrings, necklaces and bracelets looking their best between wears.</p>
+          <ol>
+            <li><strong>Put jewellery on last.</strong> Apply perfume, lotion, sunscreen and hair products before you accessorise. Let each product settle first so residue is less likely to transfer to your jewellery.</li>
+            <li><strong>Take it off before swimming or cleaning.</strong> Chlorine, salt water and household cleaners can be harsh on finishes. Store your pieces safely while you swim, shower or do chores.</li>
+            <li><strong>Wipe pieces after wearing them.</strong> A soft, dry cloth is usually enough to remove everyday moisture and surface residue before you put jewellery away.</li>
+            <li><strong>Store each piece separately.</strong> Keep jewellery in a pouch, compartment or soft-lined box to help reduce scratches and tangles.</li>
+            <li><strong>Keep it dry when you are not wearing it.</strong> Even water-resistant jewellery should be dried well after contact with water. Avoid storing damp pieces in a closed box.</li>
+            <li><strong>Choose gentle cleaning only.</strong> Skip abrasive cloths, toothpaste and strong cleaning solutions. If a piece needs attention, use a clean soft cloth and follow its care instructions.</li>
+            <li><strong>Rotate your favourites.</strong> Giving the same piece a break now and then is an easy way to enjoy more of your collection.</li>
+          </ol>
+          <p>The goal is not a complicated routine; it is mindful everyday care. Explore <a href="shop.html">Zevorelle anti-tarnish jewellery</a> for versatile styles you can make part of your daily rotation.</p>
+        </article>
+
+        <article id="anti-tarnish-vs-gold-plated" style="border-top:1px solid var(--color-line);padding:36px 0;">
+          <div class="post-card__meta">Jewellery Guide &middot; <time datetime="2026-07-29">29 July 2026</time></div>
+          <h2>Anti-Tarnish vs Gold-Plated Jewellery: What Is the Difference?</h2>
+          <p>Jewellery descriptions can include several useful terms, and two of the most common are <strong>anti-tarnish</strong> and <strong>gold-plated</strong>. They are not opposites: a piece may have a gold-coloured finish and also be designed with features intended to help it resist tarnishing. Understanding the language makes it easier to choose with confidence.</p>
+          <h3>What does anti-tarnish mean?</h3>
+          <p>Anti-tarnish refers to jewellery made or finished with the aim of reducing the dulling or colour change that can happen over time. The materials, coating and care routine all play a part. It does not mean a piece needs no care at all, but it can be a practical choice for jewellery you plan to wear regularly.</p>
+          <h3>What does gold-plated mean?</h3>
+          <p>Gold-plated jewellery has a layer of gold-coloured material applied over another base metal. The look, thickness and durability of that finish can vary from piece to piece. Product details and care guidance are useful because they explain how to enjoy the finish for longer.</p>
+          <h3>How should you choose?</h3>
+          <p>Start with how you will wear it. For an everyday necklace or pair of earrings, look for a comfortable, skin-friendly design and clear care instructions. For a special occasion, you may prioritise a statement shape, layered look or a warm gold finish. At Zevorelle, our collection focuses on anti-tarnish, water-resistant styles that are easy to wear and easy to style.</p>
+        </article>
+
+        <article id="everyday-jewellery-styling" style="border-top:1px solid var(--color-line);padding:36px 0;">
+          <div class="post-card__meta">Styling Tips &middot; <time datetime="2026-07-29">29 July 2026</time></div>
+          <h2>How to Style Everyday Jewellery: A Simple Guide</h2>
+          <p>The best everyday jewellery feels like part of your outfit, not an afterthought. You do not need a large collection to create polished combinations. Begin with a few pieces you enjoy wearing, then use proportion and repetition to make your look feel intentional.</p>
+          <h3>Start with one focal point</h3>
+          <p>Choose the feature you want to notice first: a pair of earrings, a pendant necklace, a stack of rings or a bracelet. Keep the other pieces simpler so the look has balance. A delicate pendant and small hoops, for example, work beautifully for workdays and casual plans alike.</p>
+          <h3>Layer necklaces with space between them</h3>
+          <p>When layering necklaces, combine two or three lengths rather than several pieces at the same point. Start with a shorter chain, add a pendant at a medium length and finish with a slightly longer style. The small gaps help every piece remain visible.</p>
+          <h3>Make ring stacks feel effortless</h3>
+          <p>Mix a statement ring with slimmer bands, or wear matching shapes across two fingers. Leave one or two fingers bare so the stack has room to stand out. If you are new to stacking, begin with two rings and build from there.</p>
+          <h3>Repeat one detail</h3>
+          <p>A repeated detail brings the look together. Pair warm gold-toned earrings with a similar-toned necklace, or echo a pearl accent in both your earrings and ring. Browse the <a href="shop.html">Zevorelle collection</a> for easy-to-layer pieces that work from day to night.</p>
+        </article>
+
+        <article id="jewellery-gift-guide" style="border-top:1px solid var(--color-line);padding:36px 0 10px;">
+          <div class="post-card__meta">Gift Guide &middot; <time datetime="2026-07-29">29 July 2026</time></div>
+          <h2>Jewellery Gift Guide for Her: Thoughtful Picks for Every Occasion</h2>
+          <p>Jewellery is a meaningful gift because it can become part of someone's everyday story. Whether you are celebrating a birthday, a friendship, a festival or a personal milestone, the best choice is usually one that reflects her style and gives her plenty of ways to wear it.</p>
+          <h3>For the minimalist</h3>
+          <p>Choose a delicate necklace, small earrings or a slim bracelet. Simple pieces suit many wardrobes and are easy to wear again and again.</p>
+          <h3>For the style enthusiast</h3>
+          <p>Look for an eye-catching ring, textured hoop or layered necklace. A more expressive design can become the focal point of an outfit while still feeling personal.</p>
+          <h3>For a first jewellery gift</h3>
+          <p>A versatile pair of earrings is a thoughtful place to start. Consider her preferred metal tone and the kinds of outfits she wears most often, then choose a shape that feels timeless rather than trend-led.</p>
+          <h3>For a special milestone</h3>
+          <p>Choose a piece that can carry the memory: a necklace she can wear often, a bracelet for her collection or a ring with a silhouette that feels distinctively hers. Need more help finding the right piece? Visit our <a href="faq.html">frequently asked questions</a> or <a href="contact.html">contact Zevorelle</a> before you choose.</p>
         </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--alt">
-    <div class="container prose">
-      <h2>Why a blog matters for SEO</h2>
-      <p>A blog gives a store fresh, keyword-relevant content to target long-tail search queries that product pages can't — questions like "how to choose a laptop backpack" or "best yoga mat for beginners." It also creates natural internal linking opportunities back to category and product pages, which is exactly what the <a href="shop.html">Shop page</a> and product pages link back to here.</p>
-      <p>In a real project, each card above would link to its own full article page. In this training build, they're kept as excerpts so students can focus on list-page SEO (structured post previews, unique meta description, category taxonomy) before building out full article templates as a practice exercise — see <a href="ASSIGNMENTS.md">ASSIGNMENTS.md</a>.</p>
-    </div>
-  </section>
-
+    <section class="section" aria-labelledby="shop-jewellery-heading">
+      <div class="container two-col">
+        <div>
+          <span class="section__kicker">Find your next favourite</span>
+          <h2 id="shop-jewellery-heading">Ready to wear your story?</h2>
+          <p style="color:var(--color-ink-soft);">Explore anti-tarnish, water-resistant jewellery designed for easy styling and everyday moments.</p>
+        </div>
+        <div style="align-self:center;">
+          <a href="shop.html" class="btn btn-gold">Shop Zevorelle jewellery</a>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer class="site-footer">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="index.html" class="brand" style="color:#fff;"><span class="brand__mark" aria-hidden="true">ES</span><span>Express Store</span></a>
-        <p>A student-built demo storefront for practising SEO and digital marketing, created by Kaushaindra Kumar in Rewari, Haryana, India. Not a real business - no live payments are processed.</p>
+        <a href="index.html" class="brand" aria-label="Zevorelle home"><img class="brand__logo" src="images/brand/zevorelle-logo.jpeg" alt="" width="132" height="58" loading="lazy" /></a>
+        <p>Anti-tarnish jewellery for everyday elegance. Discover water-resistant, skin-friendly styles designed to shine with you.</p>
       </div>
       <div>
         <h4>Shop</h4>
         <ul>
-          <li><a href="shop.html">All Products</a></li>
-          <li><a href="shop.html?cat=bags">Bags</a></li>
-          <li><a href="shop.html?cat=electronics">Electronics</a></li>
-          <li><a href="shop.html?cat=home">Home Decor</a></li>
+          <li><a href="shop.html">All jewellery</a></li>
+          <li><a href="shop.html">New arrivals</a></li>
+          <li><a href="shop.html">Gift-worthy styles</a></li>
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4>Discover</h4>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Zevorelle</a></li>
+          <li><a href="blog.html">Jewellery journal</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h4>Information</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms and conditions</a></li>
           <li><a href="sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      &copy; <span data-year>2026</span> Express Store By Kaushaindra. Built by Kaushaindra Kumar for SEO training purposes only &middot;
-      <a href="https://github.com/kaushaindra" target="_blank" rel="noopener">GitHub</a>
+      &copy; <span data-year>2026</span> Zevorelle. All rights reserved.
     </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>

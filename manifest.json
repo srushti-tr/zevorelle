@@ -1,12 +1,12 @@
 {
-  "name": "Express Store By Kaushaindra",
-  "short_name": "Express Store",
-  "description": "A demo static e-commerce site built for practical SEO and Digital Marketing training by Kaushaindra Kumar.",
+  "name": "Zevorelle",
+  "short_name": "Zevorelle",
+  "description": "Anti-tarnish jewellery for everyday elegance.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#F2F4F1",
-  "theme_color": "#0E5C56",
+  "background_color": "#FFF8F5",
+  "theme_color": "#741B32",
   "lang": "en-IN",
   "icons": [
     {
